@@ -8,7 +8,7 @@ public class ComboPromotion extends PromotionEngine
 	public ComboPromotion(HashMap<Character, Float> unit_price, HashMap<Character, Integer> unit_count) {
 		super(unit_price, unit_count);
 	}
-	@Override
+	/*@Override
 	public void comboPromotion()
 	{
 		//C+D=30
@@ -24,5 +24,5 @@ public class ComboPromotion extends PromotionEngine
 		float ch2TotalPrice=Math.min(count1, count2)*comboPrice+(count2-Math.min(count1, count2))*price2;
 		discount_unit_price.put(ch1,(ch1TotalPrice < discount_unit_price.get(ch1))?ch1TotalPrice:discount_unit_price.get(ch1));
 		discount_unit_price.put(ch2,(ch2TotalPrice < discount_unit_price.get(ch2))?ch1TotalPrice:discount_unit_price.get(ch2));
-	}
+	}*/
 }

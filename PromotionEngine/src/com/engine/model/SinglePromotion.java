@@ -5,9 +5,10 @@ import java.util.HashMap;
 public class SinglePromotion extends PromotionEngine
 {
 	public SinglePromotion(HashMap<Character, Float> unit_price, HashMap<Character, Integer> unit_count) {
+		//PromotionEngine.PromotionEngine(unit_price,unit_count);
 		super(unit_price, unit_count);
 	}
-	@Override
+	/*@Override
 	public void singlePromotion()
 	{
 		//3 As for 130
@@ -29,7 +30,7 @@ public class SinglePromotion extends PromotionEngine
 		float price=unit_price.get(ch);
 		float totalPrice=(count/comboCount)*comboPrice+(count%comboCount)*price;
 		return totalPrice;
-	}
+	}*/
 	
 
 }
