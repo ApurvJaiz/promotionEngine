@@ -8,7 +8,8 @@ public class ComboPromotion extends PromotionEngine
 	public ComboPromotion(HashMap<Character, Float> unit_price, HashMap<Character, Integer> unit_count) {
 		super(unit_price, unit_count);
 	}
-	public void singlePromotion()
+	@Override
+	public void comboPromotion()
 	{
 		//C+D=30
 		computeAmount('C','D',30);

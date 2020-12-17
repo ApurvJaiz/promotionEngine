@@ -7,6 +7,7 @@ public class SinglePromotion extends PromotionEngine
 	public SinglePromotion(HashMap<Character, Float> unit_price, HashMap<Character, Integer> unit_count) {
 		super(unit_price, unit_count);
 	}
+	@Override
 	public void singlePromotion()
 	{
 		//3 As for 130
