@@ -3,6 +3,7 @@ package com.engine;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import com.engine.service.InitializeInputService;
 import com.engine.service.InputProcessingService;
 public class PromotionEngineApp 
 {
@@ -17,6 +18,13 @@ public class PromotionEngineApp
 		char sku_id[]=processInput.splitInput(input);
 		//Getting the count of each sku
 		HashMap<Character,Integer> unit_count=processInput.getUnitCount(sku_id);
+		//Initialize the price and name of the inventory
+		InitializeInputService initialize=new InitializeInputService();
+		HashMap<Character,Float> unit_price=initialize.initializeInput();
+				
+		
+		
+		
 		/*for(Character ch:unit_count.keySet())
 		{
 			System.out.println(ch+": "+unit_count.get(ch));
