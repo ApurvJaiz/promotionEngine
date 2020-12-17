@@ -25,14 +25,14 @@ public class PromotionEngineApp
 		InitializeInputService initialize=new InitializeInputService();
 		HashMap<Character,Float> unit_price=initialize.initializeInput();
 		
-		for(Character ch:unit_count.keySet())
+		/*for(Character ch:unit_count.keySet())
 		{
 			System.out.println(ch+": "+unit_count.get(ch));
 		}
 		for(Character ch:unit_price.keySet())
 		{
 			System.out.println(ch+": "+unit_price.get(ch));
-		}
+		}*/
 		
 		PromotionEngineService promotionEngineService=new PromotionEngineService(unit_price,unit_count);
 		System.out.println(promotionEngineService.totalPrice());
