@@ -16,11 +16,15 @@ public class PromotionEngineApp
 		//processing the input
 		InputProcessingService processInput=new InputProcessingService();
 		char sku_id[]=processInput.splitInput(input);
-		//Getting the count of each sku
+		
+		//Getting the count of each SKU
 		HashMap<Character,Integer> unit_count=processInput.getUnitCount(sku_id);
-		//Initialize the price and name of the inventory
+		
+		//Initialize the price and name of the inventory items
 		InitializeInputService initialize=new InitializeInputService();
 		HashMap<Character,Float> unit_price=initialize.initializeInput();
+		
+		
 				
 		
 		
