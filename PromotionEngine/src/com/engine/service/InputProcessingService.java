@@ -7,8 +7,9 @@ public class InputProcessingService
 
 	public char[] splitInput(String input) 
 	{
+		//input=input.trim();
 		String splitRegex="\\s+";
-		String SKU[]=input.split(splitRegex);
+		String SKU[]=input.trim().split(splitRegex);
 		char sku_id[]=new char[SKU.length];
 		int count=0;
 		for(String str:SKU)
